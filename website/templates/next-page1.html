@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('/static/log-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .stock-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .stock-item {
+            flex: 1 1 calc(33.333% - 20px);
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: calc(33.333% - 20px); /* Ensure items fit within the container */
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+        }
+        .stock-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .stock-item h2 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+        .stock-item p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .next-button {
+          position: fixed; /* Fix the button's position */
+          bottom: 20px; /* Space from the bottom */
+          right: 50px; /* Space from the right */
+          padding: 10px 20px;
+          background-color: #d7eedf;
+          color: rgb(5, 5, 5);
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          text-align: center;
+          font-size: 16px;
+          text-decoration: none;
+          z-index: 1000; /* Ensure the button is above other content */
+      }
+      .next-button:hover {
+          background-color: #c8a9eb;
+      }
+      .previous-button {
+        position: fixed; /* Fix the button's position */
+        bottom: 20px; /* Space from the bottom */
+        right: 190px; /* Space from the right */
+        padding: 10px 20px;
+        background-color: #d7eedf;
+        color: rgb(5, 5, 5);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+        z-index: 1000; /* Ensure the button is above other content */
+    }
+    .previous-button:hover {
+        background-color: #c8a9eb;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cosmetic Brands</h1>
+        <div class="stock-list">
+            <!-- Example of a stock item -->
+            <div class="stock-item">
+                <img src="/static/prd15.jpg" alt="Product Image">
+                <h2>Product Name 1</h2>
+                <p><strong>Product ID:</strong> 001</p>
+                <p><strong>Status:</strong> Available</p>
+                <p><strong>Quantity:</strong> 50</p>
+            </div>
+            <div class="stock-item">
+                <img src="/static/prd14.jpg" alt="Product Image">
+                <h2>Product Name 2</h2>
+                <p><strong>Product ID:</strong> 002</p>
+                <p><strong>Status:</strong> Sold</p>
+                <p><strong>Quantity:</strong> 30</p>
+            </div>
+            <div class="stock-item">
+              <img src="/static/prd16.jpg" alt="Product Image">
+              <h2>Product Name 2</h2>
+              <p><strong>Product ID:</strong> 002</p>
+              <p><strong>Status:</strong> Sold</p>
+              <p><strong>Quantity:</strong> 30</p>
+          </div>
+          <div class="stock-item">
+            <img src="/static/prd17.jpg" alt="Product Image">
+            <h2>Product Name 2</h2>
+            <p><strong>Product ID:</strong> 002</p>
+            <p><strong>Status:</strong> Sold</p>
+            <p><strong>Quantity:</strong> 30</p>
+        </div>
+        <div class="stock-item">
+          <img src="/static/prd18.jpg" alt="Product Image">
+          <h2>Product Name 2</h2>
+          <p><strong>Product ID:</strong> 002</p>
+          <p><strong>Status:</strong> Sold</p>
+          <p><strong>Quantity:</strong> 30</p>
+      </div>
+     
+    
+            <!-- Add more stock items here -->
+        </div>
+        <!--<a href="/dashboard" class="back-button">Back to Dashboard</a>-->
+        <a href="/next" class="previous-button">← Previous Page</a>
+        <a href="/shoes" class="next-button">Next Page →</a>
+    </div>
+</body>
+</html>

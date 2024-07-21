@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gucci Branded Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('/static/log-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .category {
+            margin-bottom: 30px;
+        }
+        .category h2 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            color: #333;
+        }
+        .product-list {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            padding-bottom: 10px;
+        }
+        .product-item {
+            flex: 0 0 auto;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px; /* Fixed width for each item */
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+        }
+        .product-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .product-item h3 {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+        .product-item p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .rating .rating-text {
+          color: #666; /* Black color for the rating text */
+      }
+      
+        .rating {
+          font-size: 18px;
+          right:40px;
+          color: #666; /* Default text color for rating */
+      }
+      
+      .rating .stars {
+          color: gold; /* Gold color for stars */
+      }
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #b8649f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .back-button:hover {
+            background-color: #c8a9eb;
+        }
+        .next-button {
+            position: fixed; /* Fix the button's position */
+            bottom: 20px; /* Space from the bottom */
+            right: 50px; /* Space from the right */
+            padding: 10px 20px;
+            background-color: #d7eedf;
+            color: rgb(5, 5, 5);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-size: 16px;
+            text-decoration: none;
+            z-index: 1000; /* Ensure the button is above other content */
+        }
+        .next-button:hover {
+            background-color: #c8a9eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gucci Branded Products</h1>
+
+        <!-- Shirts Category -->
+        <div class="category">
+            <h2>Shirts</h2>
+            <div class="product-list">
+                <!-- Example of a product item -->
+                <div class="product-item">
+                    <img src="/static/shirt.jpg" alt="Gucci Shirt 1">
+                    <h3>Gucci Classic Shirt</h3>
+                    <p><strong>Product ID:</strong> SH001</p>
+                    <p><strong>Status:</strong> Available</p>
+                    <p><strong>Quantity:</strong> 25</p>
+                    <p><strong>Sold:</strong> 150</p>
+                    <p class="rating">
+                      <span class="rating-text"><strong>Rating:</strong></span>
+                      <span class="stars">★★★★☆</span>
+                  </p>
+                  
+                </div>
+                <!-- Add more shirts here -->
+            </div>
+        </div>
+
+        <!-- Kurtis Category -->
+        <div class="category">
+            <h2>Kurtis</h2>
+            <div class="product-list">
+                <!-- Example of a product item -->
+                <div class="product-item">
+                    <img src="/static/kurti.jpg" alt="Gucci Kurti 1">
+                    <h3>Gucci Elegant Kurti</h3>
+                    <p><strong>Product ID:</strong> KU001</p>
+                    <p><strong>Status:</strong> Available</p>
+                    <p><strong>Quantity:</strong> 30</p>
+                    <p><strong>Sold:</strong> 120</p>
+                    <p class="rating">
+                        <span class="rating-text"><strong>Rating:</strong></span>
+                        <span class="stars">★★★★☆</span>
+                    </p>
+                </div>
+                <!-- Add more kurtis here -->
+            </div>
+        </div>
+
+        <!-- Pants Category -->
+        <div class="category">
+            <h2>Pants</h2>
+            <div class="product-list">
+                <!-- Example of a product item -->
+                <div class="product-item">
+                    <img src="/static/pant.jpg" alt="Gucci Pants 1">
+                    <h3>Gucci Formal Pants</h3>
+                    <p><strong>Product ID:</strong> PA001</p>
+                    <p><strong>Status:</strong> Available</p>
+                    <p><strong>Quantity:</strong> 40</p>
+                    <p><strong>Sold:</strong> 200</p>
+                    <p class="rating">
+                        <span class="rating-text"><strong>Rating:</strong></span>
+                        <span class="stars">★★★★☆</span>
+                    </p>
+                </div>
+                <!-- Add more pants here -->
+            </div>
+        </div>
+
+        <!-- Kidswear Category -->
+        <div class="category">
+            <h2>Kidswear</h2>
+            <div class="product-list">
+                <!-- Example of a product item -->
+                <div class="product-item">
+                    <img src="/static/kids.jpg" alt="Gucci Frock 1">
+                    <h3>Gucci Kids Dress</h3>
+                    <p><strong>Product ID:</strong> FR001</p>
+                    <p><strong>Status:</strong> Available</p>
+                    <p><strong>Quantity:</strong> 20</p>
+                    <p><strong>Sold:</strong> 80</p>
+                    <p class="rating">
+                        <span class="rating-text"><strong>Rating:</strong></span>
+                        <span class="stars">★★★★☆</span>
+                    </p>
+                </div>
+                <!-- Add more frocks here -->
+            </div>
+        </div>
+
+        <!-- Sarees Category -->
+        <div class="category">
+            <h2>Sarees</h2>
+            <div class="product-list">
+                <!-- Example of a product item -->
+                <div class="product-item">
+                    <img src="/static/saree.jpg" alt="Gucci Kidswear 1">
+                    <h3>Gucci Women Saree</h3>
+                    <h2>rating</h2>
+                    <p><strong>Product ID:</strong> KW001</p>
+                    <p><strong>Status:</strong> Available</p>
+                    <p><strong>Quantity:</strong> 15</p>
+                    <p><strong>Sold:</strong> 50</p>
+                    <p class="rating">
+                        <span class="rating-text"><strong>Rating:</strong></span>
+                        <span class="stars">★★★★☆</span>
+                    </p>
+                </div>
+                <!-- Add more sarees here -->
+            </div>
+        </div>
+
+        <!-- More categories can be added here -->
+
+        <a href="/stock-details" class="back-button">Back to Stock List</a>
+    </div>
+    
+</body>
+</html>
